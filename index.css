@@ -1,0 +1,122 @@
+main {
+	display: flex;
+	justify-content: space-around;
+}
+
+.user {
+	display: flex;
+	flex-direction: column;
+}
+
+.user-image {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+
+.user-head-top-v {
+	width: 302px;
+	height: 321px;
+	background-image: url(./images/vlad-t.jpg);
+	z-index: 100;
+}
+
+.user-head-bottom-left-v {
+	width: 62px;
+	height: 130px;
+	background-image: url(./images/vlad-b-l.jpg);
+	position: relative;
+	top: -2px;
+}
+
+.user-head-bottom-middle-v {
+	width: 144px;
+	height: 130px;
+	background-image: url(./images/vlad-b-m.jpg);
+	position: relative;
+	top: -2px;
+	z-index: 50;
+}
+
+.user-head-bottom-right-v {
+	width: 82px;
+	height: 132px;
+	background-image: url(./images/vlad-b-r.jpg);
+	position: relative;
+	top: -2px;
+	right: 1px;
+}
+
+.user-head-top-l {
+	width: 460px;
+	height: 387px;
+	background-image: url(./images/leha-t.jpg);
+}
+
+.user-head-bottom-left-l {
+	width: 74px;
+	height: 148px;
+	background-image: url(./images/leha-b-l.jpg);
+}
+
+.user-head-bottom-middle-l {
+	width: 187px;
+	height: 155px;
+	background-image: url(./images/leha-b-m.jpg);
+}
+
+.user-head-bottom-right-l {
+	width: 64px;
+	height: 149px;
+	background-image: url(./images/leha-b-r.jpg);
+}
+
+.user-head-bottom-wrapper {
+	display: flex;
+	align-self: center;
+}
+
+.on-speak {
+	animation-name: speak;
+	animation-duration: 3s;
+}
+
+@keyframes speak {
+	0% {
+		transform: translateY(30px);
+	}
+
+	20% {
+		transform: translateY(0px);
+	}
+
+	40% {
+		transform: translateY(30px);
+	}
+
+	60% {
+		transform: translateY(0px);
+	}
+
+	80% {
+		transform: translateY(30px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.user-controll-panel-wrapper {
+	margin-top: 40px;
+}
+
+.user-form {
+	display: flex;
+	flex-direction: column; 
+}
+
+.user-form-input-wrapper {
+	display: flex;
+	justify-content: center;
+}
